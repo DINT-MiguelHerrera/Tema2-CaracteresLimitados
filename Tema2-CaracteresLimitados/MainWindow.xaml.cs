@@ -20,9 +20,22 @@ namespace Tema2_CaracteresLimitados
     /// </summary>
     public partial class MainWindow : Window
     {
+        string texto = "";
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void recuadroEscritura_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if(int.Parse(conteoCaracteres.Text) < int.Parse(limitePalabras.Text))
+            {
+                texto = recuadroEscritura.Text;
+            }
+            recuadroEscritura.Text = texto;
+            conteoCaracteres.Text = texto.Length.ToString();
+            
+            
         }
     }
 }

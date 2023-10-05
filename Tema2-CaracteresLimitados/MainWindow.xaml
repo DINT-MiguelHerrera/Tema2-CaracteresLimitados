@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Rectangle HorizontalAlignment="Center" Height="434" Stroke="Red" VerticalAlignment="Center" Width="800">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFFF4B00" Offset="0"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <TextBox x:Name="recuadroEscritura" HorizontalAlignment="Center" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="700" Height="344" Margin="0,25,0,0" TextChanged="recuadroEscritura_TextChanged"/>
+        <TextBlock x:Name="conteoCaracteres" HorizontalAlignment="Right" Margin="0,380,108,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="limitePalabras" HorizontalAlignment="Right" Margin="0,380,80,0" TextWrapping="Wrap" Text="140" VerticalAlignment="Top"/>
+        <TextBlock x:Name="separadorBarra" HorizontalAlignment="Right" Margin="0,380,100,0" TextWrapping="Wrap" Text="/" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
