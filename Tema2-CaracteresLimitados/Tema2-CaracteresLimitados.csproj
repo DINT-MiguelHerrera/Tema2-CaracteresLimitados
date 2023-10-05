@@ -6,6 +6,11 @@
     <RootNamespace>Tema2_CaracteresLimitados</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>IconoCaracteresLimitados.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="IconoCaracteresLimitados.ico" />
+  </ItemGroup>
 
 </Project>
